@@ -1,0 +1,39 @@
+.card-item {
+// margin: 4px;
+}
+
+.card-item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    --card-color: #1abc9c;
+    transition: 0.3s;
+    padding: 7vh;
+    background-color: var(--card-color);
+}
+
+.card-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card-footer:hover {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-footer-text {
+    align-self: flex-start;
+}
+
+.card-footer-icon {
+    text-align: end;
+}
+
+.clickable {
+    cursor: pointer;
+}
